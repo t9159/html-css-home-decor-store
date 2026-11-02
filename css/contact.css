@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Segoe UI Light;
+}
+:root{
+    --moka: rgb(207, 184, 134);
+    --ofwhite: #FDF5E6;
+}
+.contain{
+    min-height: 100vh;
+    min-width: 100%;
+    background-color: var(--ofwhite);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+header{
+    background-color: rgb(212, 200, 175);
+    width: 100%;
+    padding: 1vw;
+    position: sticky;
+    top: 0;
+    display: flex;
+    place-content: center;
+}
+.img{
+    width: 300px;
+    height: 100px;
+    background-image: url(../main_img/newlogo\ \(2\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+a{
+    font-size: xx-large;
+    color: var(--moka);
+    display: flex;
+    z-index: 10;
+    
+}
+form{
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: solid 5px var(--moka);
+    border-radius: 20%;
+}
+footer{
+    background-color: rgb(44,44,44);
+    color: var(--ofwhite);
+    text-align: center;
+    padding: 1vh;
+    font-family: Broadway;
+    width: 100vw;
+}
+@media only screen and (min-width: 992px){
+    form{
+        width: 30vw;
+    }
+}
+@media only screen and (max-width: 600px){
+    form{
+        width: 80vw;
+    }
+}
